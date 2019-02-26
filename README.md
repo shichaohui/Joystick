@@ -12,7 +12,7 @@ Cocos Creator 游戏摇杆（全方向、四方形、八方向、跟随模式）
 步骤：
 
 0. 拷贝 Joystick.js 文件到您的项目中，并作为用户脚本组件添加到您项目的摇杆节点。
-0. 根据项目需求指定 Joystick 组件的属性。
+0. 根据项目需求指定 Joystick 组件的属性。<br/>
 ![Joystick](./screenshots/joystick.png)
 0. 通过摇杆控制角色，具体查看[Tank.js](./assets/scripts/Tank.js)。
 ![Player Script](./screenshots/player_script.png)
@@ -33,7 +33,9 @@ this.joystick.setType(Joystick.Type.ALL);
 
 **方式2（编辑器指定事件回调函数）：**
 
-Joystick 组件中已编写了 `setTypeAsAll()` `setTypeAsFour()` `setTypeAsEight()` 函数作为事件回调，在编辑器中直接使用即可。
+Joystick 组件中已编写了函数作为事件回调，在编辑器中直接使用即可。
+
+回调函数：`setTypeAsAll()` `setTypeAsFour()` `setTypeAsEight()`
 
 ### 动态修改是否使用跟随模式
 
